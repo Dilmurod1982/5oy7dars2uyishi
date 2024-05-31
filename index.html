@@ -9,11 +9,13 @@
   </head>
   <body>
     <div class="container">
-      <h1>TODO</h1>
-      <input type="text" id="new-todo" placeholder="Create a new todo..." />
-      <ul id="todo-list">
-        <li><input class="checkbox" type="checkbox" />todo</li>
-      </ul>
+      <form>
+        <h1>TODO</h1>
+        <input type="text" id="new-todo" placeholder="Create a new todo..." />
+      </form>
+
+      <ul id="todo-list"></ul>
+
       <div class="filters">
         <span id="items-left" class="items">0 items left</span>
         <div class="btns-center">
@@ -25,6 +27,12 @@
           Clear Completed
         </button>
       </div>
+      <template>
+        <li id="li-text">
+          <input class="checkbox" type="checkbox" />
+          <p id="p-text"></p>
+        </li>
+      </template>
     </div>
     <script src="./app.js"></script>
   </body>
